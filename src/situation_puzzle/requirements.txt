@@ -1,0 +1,5 @@
+openai
+tqdm
+pandas
+matplotlib
+httpx>=0.24.0
