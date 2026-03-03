@@ -209,12 +209,12 @@ class RandomAgent(Agent):
         return res
 
 
-class TitForTatAgent(Agent):
+class GrimTriggerAgent(Agent):
     """以牙还牙策略 Agent（baseline）"""
     
-    def __init__(self, name: str = "TitForTat"):
+    def __init__(self, name: str = "Grim Trigger"):
         """
-        初始化 TitForTat Agent
+        初始化 Grim Trigger Agent
         
         Args:
             name: Agent 名称
@@ -223,7 +223,7 @@ class TitForTatAgent(Agent):
 
     def clone(self) -> "Agent":
         # baseline 命名按用户要求保持不变
-        return TitForTatAgent(name=self.name)
+        return GrimTriggerAgent(name=self.name)
     
     async def choose_action(
         self,
@@ -234,7 +234,7 @@ class TitForTatAgent(Agent):
         payoff_matrix: Optional[Dict[str, Dict[str, tuple[float, float]]]] = None
     ) -> Action:
         """
-        以牙还牙策略：第一轮合作，之后一直cooperate，如果对手defect，则defect
+        以牙还牙（Grim Trigger）策略：第一轮合作，之后一直cooperate，如果对手defect，则defect
         """
         res = "cooperate"
         if round_num == 1 or opponent_last_action is None:
@@ -243,20 +243,20 @@ class TitForTatAgent(Agent):
             res = "defect"
 
         print("=" * 20)
-        print(f"[{self.name}] Round {round_num} - TitForTat Agent Response:")
+        print(f"[{self.name}] Round {round_num} - Grim Trigger Agent Response:")
         print(f"  {res.upper()}")
         print("=" * 20)
         return res
 
 
-class CopyAgent(Agent):
+class TFTAgent(Agent):
     """复制对手上一轮动作的 Agent"""
     
-    def __init__(self, name: str = "Copy"):
+    def __init__(self, name: str = "TFT"):
         super().__init__(name)
 
     def clone(self) -> "Agent":
-        return CopyAgent(name=self.name)
+        return TFTAgent(name=self.name)
     
     async def choose_action(
         self,
@@ -269,7 +269,7 @@ class CopyAgent(Agent):
         """复制对手上一轮动作"""
         res = "cooperate" if round_num == 1 or opponent_last_action is None else opponent_last_action
         print("=" * 20)
-        print(f"[{self.name}] Round {round_num} - Copy Agent Response:")
+        print(f"[{self.name}] Round {round_num} - TFT Agent Response:")
         print(f"  {res.upper()}")
         print("=" * 20)
         return res

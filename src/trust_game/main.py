@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 # 加载 .env 文件中的环境变量
 load_dotenv()
 
-from agents import Agent, RandomAgent, TitForTatAgent, CopyAgent, LLMAgent
+from agents import Agent, RandomAgent, GrimTriggerAgent, TFTAgent, LLMAgent
 from game import Game
 from tournament import Tournament
 from reporting import export_summary_csv, plot_ablation, plot_main_scores, save_json
@@ -42,7 +42,7 @@ async def main():
         type=str,
         nargs="+",
         help="Agent 列表，格式：'name:type:model' 或 'name:type'。"
-             "type 可以是 'random', 'tft' (tit-for-tat), 'llm'。"
+             "type 可以是 'random', 'tft' (TFT), 'grim' (Grim Trigger), 'llm'。"
              "对于 llm，需要指定 model（如 'gpt-4'）"
     )
     # 兼容旧参数：rounds-range 在 δ-继续机制下不再使用（保留仅为向后兼容）
@@ -128,9 +128,9 @@ async def main():
                 cooperate_prob = float(parts[2]) if len(parts) > 2 else 0.5
                 agents.append(RandomAgent(name, cooperate_prob))
             elif agent_type == "tft":
-                agents.append(TitForTatAgent(name))
-            elif agent_type == "copy":
-                agents.append(CopyAgent(name))
+                agents.append(TFTAgent(name))
+            elif agent_type == "grim":
+                agents.append(GrimTriggerAgent(name))
             elif agent_type == "llm":
                 if len(parts) < 3:
                     print(f"⚠ Warning: LLM agent '{name}' requires model name, skipping")
@@ -144,8 +144,8 @@ async def main():
         agents = [
             RandomAgent("Random-1", cooperate_prob=0.5),
             RandomAgent("Random-2", cooperate_prob=0.7),
-            TitForTatAgent("TitForTat-1"),
-            TitForTatAgent("TitForTat-2")
+            GrimTriggerAgent("Grim Trigger-1"),
+            GrimTriggerAgent("Grim Trigger-2")
         ]
     
     if not agents:

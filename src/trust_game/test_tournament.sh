@@ -38,15 +38,15 @@ for MODEL in "${MODELS[@]}"; do
 done
 
 # 添加 baseline agents
-AGENTS+=("TitForTat-1:tft")
+AGENTS+=("Grim Trigger-1:grim")
 AGENTS+=("Random-1:random:0.5")
-AGENTS+=("Copy-1:copy")
+AGENTS+=("TFT-1:tft")
 
 echo "=========================================="
 echo "Tournament 测试 - 使用多个 LLM"
 echo "=========================================="
 echo "LLM 模型数量: ${#MODELS[@]}"
-echo "Baseline agents: 3 (TitForTat, Random, Copy)"
+echo "Baseline agents: 3 (Grim Trigger, Random, TFT)"
 echo "总 agents 数量: ${#AGENTS[@]}"
 echo ""
 echo "模型列表:"

@@ -1,43 +1,36 @@
-# Situation Puzzle Benchmark（情景推理）
+# Situation Puzzle Benchmark
 
-这是一个最小可复现的 Situation Puzzle（情景推理）benchmark，用于评估不同 LLM 作为 **player** 的提问与收敛能力；另有一个固定模型作为 **judge**（知道谜底）。
+This is a minimal, reproducible Situation Puzzle benchmark designed to evaluate different LLMs as **players** in terms of their questioning strategies and convergence ability. A fixed model serves as the **judge** (which knows the ground-truth solution).
 
-**没有提示（hint）功能**：judge 只会对问题返回 `YES/NO/BOTH/IRRELEVANT`，并对 `FINAL:` 的最终猜测返回 `CORRECT/INCORRECT`。
+There is **no hint mechanism**: the judge only responds to questions with `YES / NO / BOTH / IRRELEVANT`, and to final guesses prefixed with `FINAL:` with `CORRECT / INCORRECT`.
 
 ## Files
 
-- `benchmark.py`：逐题评测 runner（**单进程、顺序执行、可 resume**）
-- `client.py`：OpenAI-compatible 客户端封装（当前默认对接 OpenRouter）
-- `puzzle_loader.py`：加载题库 `puzzles_en.json`
-- `puzzles_en.json`：英文题库
-- `run_benchmark.sh`：便捷脚本（按 player 列表并行启动多个进程）
-- `requirements.txt`：依赖列表
+- `benchmark.py`: Per-puzzle evaluation runner (**single-process, sequential execution, resume supported**)
+- `client.py`: OpenAI-compatible client wrapper (currently defaults to OpenRouter)
+- `puzzle_loader.py`: Puzzle dataset loader
+- `data/puzzles_en.json`: English puzzle dataset
+- `run_benchmark.sh`: Convenience script (launches multiple processes in parallel over a list of players)
 
 ## Setup
 
-### 1) 设置凭证 / 端点
+### 1) Configure Credentials / Endpoint
 
 ```bash
 export OPENROUTER_API_KEY="sk-..."
-export OPENROUTER_BASE_URL="https://openrouter.ai/api/v1"   # 可选
+export OPENROUTER_BASE_URL="https://openrouter.ai/api/v1"   # Optional
 ```
 
-> 注意：当前 `benchmark.py` 内部把 base_url 固定为 `https://openrouter.ai/api/v1`；如需自定义端点，请相应修改源码或自行封装 client。
+> Note: `benchmark.py` currently hardcodes the base_url as `https://openrouter.ai/api/v1`.  
+> If you need a custom endpoint, please modify the source code accordingly or wrap your own client.
 
-### 2) 安装依赖
+### 2) Run
 
-```bash
-pip install -r requirements.txt
-```
-
-### 3) 运行
-
-在本目录下运行：
+Execute in this directory:
 
 ```bash
-bash run_benchmark.sh results
+./run_benchmark.sh results
 ```
 
 Outputs:
-- `results/<player>__<judge>.json`：一个（player, judge）pair 一个文件，包含完整 transcript 与逐题结果
-
+- `results/<player>__<judge>.json`: One file per (player, judge) pair, containing the full transcript and per-puzzle results.

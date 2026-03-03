@@ -7,7 +7,7 @@ from typing import Dict, List, Tuple, Optional
 from tqdm import tqdm
 
 # 复用 naive.py 里的工具与 OpenRouter client
-from filter import (
+from naive import (
     LLMClient,
     extract_after_marker,
     normalize_answer,

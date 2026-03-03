@@ -30,7 +30,7 @@ EVAL_MODELS=(
 )
 
 echo "=========================================="
-echo "单局游戏测试 - 每个模型 vs TitForTat"
+echo "单局游戏测试 - 每个模型 vs Grim Trigger"
 echo "=========================================="
 echo "模型数量: ${#EVAL_MODELS[@]}"
 echo ""
@@ -42,10 +42,10 @@ for EVAL_MODEL in "${EVAL_MODELS[@]}"; do
     echo "测试模型: $EVAL_MODEL"
     echo "----------------------------------------"
     
-    # 运行单局游戏：每个模型 vs TitForTat
+    # 运行单局游戏：每个模型 vs Grim Trigger
     python main.py \
         --mode single \
-        --agents "LLM-${EVAL_MODEL_NAME}:llm:${EVAL_MODEL}" "TitForTat-1:tft" \
+        --agents "LLM-${EVAL_MODEL_NAME}:llm:${EVAL_MODEL}" "Grim Trigger-1:tft" \
         --delta 0.90 \
         --max-rounds 200 \
         --seed 1234 \
