@@ -1,0 +1,62 @@
+# ------------------------------
+# Dependencies / Build Artifacts
+# ------------------------------
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.tsbuildinfo
+*.local
+
+# ------------
+# Runtime Logs
+# ------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -------------------
+# Environment / Secrets
+# -------------------
+.env
+.env.*
+!.env.example
+
+# -----------------
+# Benchmark Outputs
+# (generated at repo root)
+# -----------------
+/game-log.ndjson
+/game-log-*.ndjson
+/stats-log-*.ndjson
+/poker_stats_*.png
+/poker_stats_*.pdf
+
+# -----------------
+# Python Artifacts
+# -----------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# -----------------
+# OS / IDE Artifacts
+# -----------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

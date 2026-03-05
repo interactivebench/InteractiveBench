@@ -1,0 +1,23 @@
+*.env
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+
+# OS / Editor
+.DS_Store
+
+# Common outputs
+results/
+plots/
+cache/
+figs/
+logs/
+*.log

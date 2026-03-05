@@ -1,0 +1,19 @@
+# 环境变量文件
+.env
+.env.local
+
+# 日志文件
+logs/
+*.log
+
+# 测试结果
+test_*.json
+# *_result.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+

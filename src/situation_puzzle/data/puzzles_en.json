@@ -1,0 +1,324 @@
+[
+  {
+    "id": "a_free_feast",
+    "title": "A Free Feast",
+    "setup": "A man walked into a restaurant, ate a huge meal, and didn’t pay anything.",
+    "solution": "He was a famous artist and paid with a signed check. A signature collector bought the check from the manager for more than its face value, and the check was never cashed. The restaurant got paid by the collector, while the man’s check was never redeemed—so he never actually paid for the meal.",
+    "notes": ""
+  },
+  {
+    "id": "a_taunt",
+    "title": "A Taunt",
+    "setup": "One day, the idle Ah Xing was wandering the streets. After a nearby elementary school let out, he was knocked down in the crowd by a rude kid. The kid not only didn’t apologize but even taunted him. Ah Xing didn’t get angry—he was delighted. Why?",
+    "solution": "The kid snapped, “Which class are you in? Next time I’ll bring my big brother to beat you up!” Ah Xing was nearly 30, and was pleased that the kid thought he looked like a student—i.e., very young.",
+    "notes": ""
+  },
+  {
+    "id": "best_friends",
+    "title": "Best Friends",
+    "setup": "Xiao Ming and Xiao Hong are best friends and ‘go to and from school together’ every day. One day Xiao Hong doesn’t wait for Xiao Ming and leaves first. Xiao Ming is angry and the next day he doesn’t wait for Xiao Hong either. Then Xiao Hong dies. Why?",
+    "solution": "Xiao Hong sleepwalks. The ‘going to school together’ was actually her sleepwalking along the route, and Xiao Ming (a neighbor) would wake/guide her. The day he didn’t wait, she sleepwalked into danger and was killed in an accident.",
+    "notes": ""
+  },
+  {
+    "id": "business_as_usual",
+    "title": "Business as Usual",
+    "setup": "The man made another profitable deal as usual, but this time his family—who had always supported him—was furious.",
+    "solution": "He was a human trafficker. When he was younger, he made money that way and his family was happy. Now he had dementia and ended up selling his own grandchild, infuriating the family.",
+    "notes": ""
+  },
+  {
+    "id": "chopped_a_thousand_times",
+    "title": "Chopped a Thousand Times",
+    "setup": "Every day I endure countless chops and hacks. Some cheer for me; some curse my greed. Yet my body only keeps growing bigger.",
+    "solution": "I am the Pinduoduo app (the endless ‘cut-the-price’ promotions make the platform grow).",
+    "notes": ""
+  },
+  {
+    "id": "coconut",
+    "title": "Coconut",
+    "setup": "A mother comes home and finds her cake has been eaten. She asks Xiao Ming, “Did you steal the cake?” He says, “Not me.” She says, “Your aunt said she saw you.” Xiao Ming is instantly terrified. Why?",
+    "solution": "The mother killed the aunt and hid the aunt’s head in the refrigerator, covering it with the cake. When Xiao Ming stole the cake, he saw the head but thought it was a coconut. When his mother says “your aunt said she saw you,” he realizes the ‘aunt’ cannot speak—what he saw was her head.",
+    "notes": ""
+  },
+  {
+    "id": "cows_eating_grass",
+    "title": "Cows Eating Grass",
+    "setup": "You live alone in the suburbs. Your neighbors are a couple who raise cattle. One night you’re awakened by loud noises; you hear the sound of “cows eating grass” and banging on your door, then you go back to sleep. The next day the police knock; you are horrified.",
+    "solution": "The neighbors fought. The husband chopped off the wife’s limbs and killed himself. The limbless wife tried to crawl and chew grass (sounding like a cow eating) and banged her head on your door for help, bleeding to death at your doorstep.",
+    "notes": ""
+  },
+  {
+    "id": "delayed_death",
+    "title": "Delayed Death",
+    "setup": "Helen never expected that choosing to travel by airplane would save her life.",
+    "solution": "Helen had surgery a few days earlier. At the airport, the metal detector kept going off even though she had removed all metal items. An X-ray revealed the surgeon had accidentally left a scalpel inside her. Discovering it in time saved her life.",
+    "notes": ""
+  },
+  {
+    "id": "empty_house",
+    "title": "Empty House",
+    "setup": "A person goes to view an empty house. He loves it and signs the contract on the spot. But when he walks into the bedroom, he immediately changes his mind and demands a refund. Why?",
+    "solution": "He is blind and judged the house by layout and quietness. In the bedroom he hears the thunder of trains passing next door—a dealbreaker—so he backs out.",
+    "notes": ""
+  },
+  {
+    "id": "fingerprint_lock",
+    "title": "Fingerprint Lock",
+    "setup": "“Beep! Fingerprint verification failed”… “Beep! Fingerprint verification failed”… After 9 consecutive failures: “Click! Fingerprint verification succeeded.” I know I’m not far from death.",
+    "solution": "A murderer is outside. He has killed my husband and cut off all of his fingers. He is trying each severed finger one by one to open the fingerprint lock on my door.",
+    "notes": ""
+  },
+  {
+    "id": "footsteps",
+    "title": "Footsteps",
+    "setup": "Whenever I walked alone, I could hear two sets of footsteps. One day it finally became only one set—and I regretted it.",
+    "solution": "I am blind. My father always followed me quietly because he worried about me, but I thought someone was stalking me. One day a runaway truck was about to hit me; my father ran forward to push me away and died. From then on, there was only one set of footsteps, and I regretted ever wishing the other would disappear.",
+    "notes": ""
+  },
+  {
+    "id": "good_kid",
+    "title": "Good Kid",
+    "setup": "My teddy bear told me I’m not a good kid anymore.",
+    "solution": "The parents told a girl that if she’s a good kid and makes wishes to the teddy bear, they’ll come true (the bear actually contains a listening device). Later the parents die. She wishes they would come back, but it doesn’t happen, so she believes she must be a ‘bad kid.’",
+    "notes": ""
+  },
+  {
+    "id": "hide_and_seek",
+    "title": "Hide-and-Seek",
+    "setup": "When I was six, my grandfather died. My family and I went to mourn him, and I played hide-and-seek with my older sister. I said something to my mother that scared her so much she fainted. What did I say?",
+    "solution": "At the funeral, my sister hid inside a paper house meant to be burned as an offering. When it was set on fire, she died inside. I later told my mother, “Sister is dancing inside that house.”",
+    "notes": ""
+  },
+  {
+    "id": "hide_and_seek_2",
+    "title": "Hide-and-Seek 2",
+    "setup": "I was playing hide-and-seek with my mom. When my mom saw me, I couldn’t move at all.",
+    "solution": "I was hiding under the bed at home. Hearing footsteps, I knew Mom was coming. When the door opened, I saw my mother’s eyes—she had been killed and her body was being dragged across the floor. I covered my mouth and nose and didn’t dare move.",
+    "notes": ""
+  },
+  {
+    "id": "it_didnt_seem_that_serious",
+    "title": "It Didn’t Seem That Serious",
+    "setup": "The man couldn’t imagine that his common cold would lead to his death.",
+    "solution": "There was a gas leak at home, but because he had a cold he couldn’t smell it. While cooking he ignited the gas and died in the ensuing fire.",
+    "notes": ""
+  },
+  {
+    "id": "killed_by_breakfast",
+    "title": "Killed by Breakfast",
+    "setup": "He was killed by the breakfast he cooked himself.",
+    "solution": "He was climbing a snowy mountain. He put pepper on his breakfast, sneezed loudly, and triggered an avalanche that killed him.",
+    "notes": ""
+  },
+  {
+    "id": "killed_his_wife_then_himself",
+    "title": "Killed His Wife, Then Himself",
+    "setup": "A man killed his wife, returned to his room, and then killed himself.",
+    "solution": "For his 50th birthday, he planned to kill his wife, take all the money, and start a new life in a new city. He killed her when they got home, dragged her body inside… and suddenly all the lights turned on. His friends jumped out yelling “Surprise!” Realizing what he had done, he killed himself.",
+    "notes": ""
+  },
+  {
+    "id": "laifu",
+    "title": "Laifu",
+    "setup": "Laifu and I live together and depend on each other. One day Laifu doesn’t come back. I’m worried and go out searching. When I finally find Laifu, everything becomes tragic.",
+    "solution": "Laifu is a dog. It fell into a deep pit. When I found it, I was so emotional that I also fell into the same pit.",
+    "notes": ""
+  },
+  {
+    "id": "my_brothers_died_one_after_another",
+    "title": "My Brothers Died One After Another",
+    "setup": "I had two older brothers. The three of us slept in the same bed since we were kids. One day my second brother died of illness, and not long after that I killed my eldest brother.",
+    "solution": "My two brothers were twins. For years one slept on my left and the other on my right. After the right side became empty, I couldn’t get used to it. I had a horrible idea: if I cut my remaining brother in half, I could put one half on each side and sleep comfortably again.",
+    "notes": ""
+  },
+  {
+    "id": "my_closest_friend",
+    "title": "My Closest Friend",
+    "setup": "I had a very close friend. We were inseparable. Sadly, he died.",
+    "solution": "I was extremely lonely and developed a delusional “friend.” After my family forced me into treatment, the delusion disappeared—so, from my perspective, my friend “died.”",
+    "notes": ""
+  },
+  {
+    "id": "my_private_doctor",
+    "title": "My Private Doctor",
+    "setup": "I received a phone call, and then I killed someone.",
+    "solution": "My “private doctor” told me I had severe schizophrenia and that my “friend” was just a hallucination. Then my friend walked in and asked why I was talking to a broken phone. Believing the doctor, I killed my friend, thinking he would disappear from my world.",
+    "notes": ""
+  },
+  {
+    "id": "new_shoes",
+    "title": "New Shoes",
+    "setup": "A man buys a pair of new shoes and happily wears them to work. After work, he goes home and kills himself. Why?",
+    "solution": "He does high-altitude work (e.g., window cleaning). The new shoes were slippery, causing him to fall. He survived, but his fall startled a coworker who then also fell and died. He later killed himself out of guilt.",
+    "notes": ""
+  },
+  {
+    "id": "no_way_out",
+    "title": "No Way Out",
+    "setup": "I was about to reach that building, and I knew there was nothing I could do—I was doomed.",
+    "solution": "They were playing Monopoly. After rolling the dice, he realized he would land on a square with an enormous rent and understood he was about to lose.",
+    "notes": ""
+  },
+  {
+    "id": "numbers",
+    "title": "Numbers",
+    "setup": "38, 40, 32, 300, 0, 0, 0.",
+    "solution": "These are a household’s monthly water bills. One month it spikes because the resident died of a heart attack in the shower and the water kept running. After the body was found, nobody lived there, so subsequent bills were zero.",
+    "notes": ""
+  },
+  {
+    "id": "pregnant",
+    "title": "Pregnant",
+    "setup": "A wife was pregnant twice. Once she was happy; once she cried. Why?",
+    "solution": "During her first (real) pregnancy, her husband developed a mental illness and became fixated on her pregnant belly. After she gave birth and her belly shrank, he couldn’t accept it. He tied her up and forcibly injected water into her abdomen to make it swell again—so she looked pregnant a second time, and she cried.",
+    "notes": ""
+  },
+  {
+    "id": "rainy_night",
+    "title": "Rainy Night",
+    "setup": "On a rainy night, a man drives past a bus stop and sees a woman soaked and waiting. He doesn’t stop. The next day he sees on the news that the woman died and police are looking for witnesses. He’s scared and doesn’t report anything. On the third day, the police come and arrest him. Why?",
+    "solution": "The woman was his wife. He thought she looked like a ghost and didn’t stop. She walked on and was hit in a traffic accident. Police identified his car from nearby surveillance, so they found him.",
+    "notes": ""
+  },
+  {
+    "id": "red_view",
+    "title": "Red View",
+    "setup": "A woman rents a room with a small hole in the wall. Every time she peeks through it, she sees a red scene and assumes the next room is painted red. She asks the landlord who lives next door; after hearing the answer, she turns pale.",
+    "solution": "The landlord says a person with red eyes lives next door. The ‘red scene’ she saw was the neighbor’s red, irritated eyes staring back through the hole.",
+    "notes": ""
+  },
+  {
+    "id": "sleeping_beauty",
+    "title": "Sleeping Beauty",
+    "setup": "A princess is cursed to sleep forever, and only a prince’s kiss can wake her. A handsome prince kisses her awake—but she kills him. Why?",
+    "solution": "The princess has aged greatly while asleep, but the prince is still young. She fears he will leave her, so she kills him.",
+    "notes": ""
+  },
+  {
+    "id": "slippery_hands",
+    "title": "Slippery Hands",
+    "setup": "I was video chatting with my best friend. Suddenly my phone slipped from my hand and fell to the floor. My friend froze in terror. I died. Why?",
+    "solution": "When the phone fell, the camera angle showed a man hiding under my bed. Seeing he was about to be discovered when I picked up the phone, he rushed out and killed me. My friend witnessed it on video and was terrified.",
+    "notes": ""
+  },
+  {
+    "id": "smile",
+    "title": "Smile",
+    "setup": "I dance with a smile on my face, watching my companions fall one by one.",
+    "solution": "I am the Dancing Zombie (Dance King) in Plants vs. Zombies.",
+    "notes": ""
+  },
+  {
+    "id": "ten_yuan_transfer",
+    "title": "Ten Yuan Transfer",
+    "setup": "A couple: the boyfriend walks the girlfriend home every day. This time, after he drops her off, she gives him ten yuan.",
+    "solution": "They ran into the girl’s parents. To avoid being suspected, she paid him to make it look like he was a ride-hailing driver.",
+    "notes": ""
+  },
+  {
+    "id": "the_anniversary",
+    "title": "The Anniversary",
+    "setup": "On the one-year anniversary of my son’s death, I killed three people who came to mourn him.",
+    "solution": "My son died and asked me to donate his organs so he could “live on” in others. Three recipients received three of his organs. At the memorial I recognized them—and saw them recklessly harming themselves (e.g., smoking with the donated lungs, drinking with the donated liver, ruining the donated skin). In rage, I killed them.",
+    "notes": ""
+  },
+  {
+    "id": "the_balloon",
+    "title": "The Balloon",
+    "setup": "A balloon fell, and the police arrived.",
+    "solution": "During New Year’s, someone stuck “2025” balloons on an indoor window. The “5” fell, so from outside the mirrored remaining “202” looked like “SOS,” prompting a police call.",
+    "notes": ""
+  },
+  {
+    "id": "the_basement_door",
+    "title": "The Basement Door",
+    "setup": "Alice opened the basement door—and was stunned.",
+    "solution": "Alice had been locked in the basement by her parents since childhood and believed the world was only that big. Opening the door, she saw the outside world for the first time.",
+    "notes": ""
+  },
+  {
+    "id": "the_best_day",
+    "title": "The Best Day",
+    "setup": "He woke up on a park bench. Last night he had proposed to Susan, and she had almost accepted and told him to come to her house the next afternoon. He rubbed feeling back into his numb legs, knocked on her door, and called Susan’s name. When the door opened, he realized something was wrong.",
+    "solution": "He had Alzheimer’s disease and often believed he was back on the day he first proposed to his wife. He had wandered off and slept on a bench. He found his way home by habit, thinking he would see “Susan,” but he was met by a much younger family member (e.g., his granddaughter) and realized he had relapsed again and many years had passed.",
+    "notes": ""
+  },
+  {
+    "id": "the_bet",
+    "title": "The Bet",
+    "setup": "Two dead bodies. The only things at the scene are a gun, a single bullet, and a deck of cards. What happened?",
+    "solution": "Two men were trapped in a submarine that was flooding in deep water. They played cards; the winner earned the right to use the single bullet to commit suicide quickly. The loser died slowly as the submarine filled with water.",
+    "notes": ""
+  },
+  {
+    "id": "the_body_beside_the_pool",
+    "title": "The Body Beside the Pool",
+    "setup": "A man was found dead in an empty room. Nearby there was only a pool of water. How did he die?",
+    "solution": "He was stabbed by an icicle, which later melted into the pool of water.",
+    "notes": ""
+  },
+  {
+    "id": "the_gift",
+    "title": "The Gift",
+    "setup": "On his birthday, he receives a package: the game console he’s always wanted. He’s overjoyed, but a few days later he bursts into tears. Why?",
+    "solution": "The person who sent it has died. When he starts playing, he finds a saved game the sender prepared, containing a farewell message; overwhelmed with grief, he cries.",
+    "notes": ""
+  },
+  {
+    "id": "the_instant_camera",
+    "title": "The Instant Camera",
+    "setup": "A man gets a Polaroid camera and happily takes photos of his friends. But every time a photo develops, he instantly tears it up. Why?",
+    "solution": "His friends are actually dead; he is hallucinating their presence. The photos reveal the truth (their dead appearance), so he tears them up in fear.",
+    "notes": ""
+  },
+  {
+    "id": "the_moon",
+    "title": "The Moon",
+    "setup": "If it weren’t for the moon, I would know who the killer is.",
+    "solution": "Someone was reading a mystery novel on the beach at night. The tide rose unnoticed and soaked the book, ruining the ending, so he never found out who the killer was.",
+    "notes": ""
+  },
+  {
+    "id": "the_nanny",
+    "title": "The Nanny",
+    "setup": "The nanny hasn’t come for a week, but I keep feeling like someone is still in the house. My hair starts falling out, and my mouth has a strange odor. A few days later, the police find both my body and the nanny’s body in my home.",
+    "solution": "I was already dead. The sensations (someone in the house, hair falling out, bad breath) are consistent with a corpse decomposing. The nanny was also killed, and both bodies were eventually discovered by police.",
+    "notes": ""
+  },
+  {
+    "id": "the_new_home",
+    "title": "The New Home",
+    "setup": "A person moves into a new home, happily walks around inside, then steps outside and dies. Why?",
+    "solution": "He was blind and had just regained sight (e.g., via a cornea transplant). He happily explored the new home, but when he stepped outside he didn’t realize there was a cliff and fell to his death.",
+    "notes": ""
+  },
+  {
+    "id": "the_twins",
+    "title": "The Twins",
+    "setup": "A pair of twin brothers: on his birthday, the older brother kills the younger brother. Why?",
+    "solution": "For inheritance. They were born minutes apart across midnight on different calendar dates, so on “his birthday” the older becomes legally eligible first and kills the younger to inherit everything.",
+    "notes": ""
+  },
+  {
+    "id": "traffic_lights",
+    "title": "Traffic Lights",
+    "setup": "Green means stop; red means go. “Red light, red light”—I died at the next intersection.",
+    "solution": "A woman gets into a taxi and notices blood stains. To test the driver, she lies that she is color-blind. At an intersection the light turns red but the driver accelerates; she blurts out “red light,” revealing she can distinguish colors. The driver kills her.",
+    "notes": ""
+  },
+  {
+    "id": "treating_mom",
+    "title": "Treating Mom",
+    "setup": "He decided to pay for treatment for his impoverished mother, but she refused forcefully.",
+    "solution": "His mother had kidney failure and needed a transplant. He offered to donate one of his kidneys. But he didn’t know that when he was a child, his mother—short on money for her business—had already sold one of his kidneys. Donating the remaining kidney would kill him, so she refused.",
+    "notes": ""
+  },
+  {
+    "id": "working_on_the_street",
+    "title": "Working on the Street",
+    "setup": "I was working hard on the street when a crazy woman suddenly rushed at me. Dad quickly picked me up and carried me home, but the woman followed us there.",
+    "solution": "“Dad” was not my real father—he was the trafficker who kidnapped me. I was being forced to beg on the street. The “crazy” woman was my real mother who had been searching for me and recognized me immediately. The trafficker tried to hide me, but she followed and eventually took revenge and freed me.",
+    "notes": ""
+  }
+]
