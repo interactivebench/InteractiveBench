@@ -1,6 +1,6 @@
 # InteractiveBench
 
-The official repository for the paper **Interactive Benchmarks**.
+The official repository for the [paper](./Interactive_Benchmarks.pdf) **Interactive Benchmarks**.
 
 ![](assets/overview.png)
 
