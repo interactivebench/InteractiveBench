@@ -1,6 +1,6 @@
 # InteractiveBench
 
-The official repository for the [paper](./Interactive_Benchmarks.pdf) **Interactive Benchmarks** [https://huggingface.co/papers/2603.04737]. 
+The official repository for the paper **Interactive Benchmarks** ([https://huggingface.co/papers/2603.04737](https://huggingface.co/papers/2603.04737)). 
 
 ![](assets/overview.png)
 
