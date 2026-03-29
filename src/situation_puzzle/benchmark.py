@@ -315,9 +315,20 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--player_model", type=str, required=True)
     ap.add_argument("--judge_model", type=str, required=True)
 
-    # keep these args because your LLMClient constructor expects them in your current codebase
+    # Provider selection
+    ap.add_argument("--provider", choices=["openrouter", "custom"], default="openrouter",
+                    help="API provider: openrouter or custom (for Moonshot, DeepSeek, etc.)")
+
+    # OpenRouter settings
     ap.add_argument("--api_key", type=str, default=os.getenv("OPENROUTER_API_KEY", ""), help="API key (env OPENROUTER_API_KEY)")
     ap.add_argument("--base_url", type=str, default=os.getenv("OPENROUTER_BASE_URL", ""), help="Base url (env OPENROUTER_BASE_URL)")
+
+    # Custom provider settings (for Moonshot, etc.)
+    ap.add_argument("--custom_api_key", type=str, default=None,
+                    help="API key for custom provider (reads from CUSTOM_API_KEY env var if not specified)")
+    ap.add_argument("--custom_base_url", type=str, default=None,
+                    help="Base URL for custom provider (reads from CUSTOM_BASE_URL env var if not specified)")
+
     ap.add_argument("--timeout_s", type=float, default=120.0)
 
     return ap.parse_args()
@@ -357,9 +368,11 @@ def main() -> int:
             )
 
     client = LLMClient(
-        provider="openrouter",
-        openrouter_api_key=os.environ.get("OPENROUTER_API_KEY"),
-        openrouter_base_url="https://openrouter.ai/api/v1",
+        provider=args.provider,
+        openrouter_api_key=os.environ.get("OPENROUTER_API_KEY") if args.provider == "openrouter" else None,
+        openrouter_base_url=os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1") if args.provider == "openrouter" else None,
+        custom_api_key=args.custom_api_key or os.environ.get("CUSTOM_API_KEY") if args.provider == "custom" else None,
+        custom_base_url=args.custom_base_url or os.environ.get("CUSTOM_BASE_URL") if args.provider == "custom" else None,
     )
 
     for puz in tqdm(puzzles, desc=f"{args.player_model} doing"):

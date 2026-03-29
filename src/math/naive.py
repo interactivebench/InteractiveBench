@@ -94,9 +94,11 @@ class LLMClient:
     """
     Unified chat() interface:
       - provider=openrouter: OpenAI-compatible via OpenRouter
+      - provider=custom: Custom OpenAI-compatible API (e.g., Moonshot, DeepSeek)
     """
 
-    def __init__(self, provider: str, openrouter_api_key: str = None, openrouter_base_url: str = None):
+    def __init__(self, provider: str, openrouter_api_key: str = None, openrouter_base_url: str = None,
+                 custom_api_key: str = None, custom_base_url: str = None):
         self.provider = provider
 
         self.openrouter_client = None
@@ -109,11 +111,22 @@ class LLMClient:
                 base_url=openrouter_base_url or "https://openrouter.ai/api/v1",
                 api_key=openrouter_api_key,
             )
+        elif provider == "custom":
+            if OpenAI is None:
+                raise RuntimeError("provider=custom requires 'openai' package. pip install openai")
+            if not custom_api_key:
+                raise RuntimeError("CUSTOM_API_KEY is missing for custom provider.")
+            if not custom_base_url:
+                raise RuntimeError("CUSTOM_BASE_URL is missing for custom provider.")
+            self.openrouter_client = OpenAI(
+                base_url=custom_base_url,
+                api_key=custom_api_key,
+            )
         else:
             raise ValueError(f"Unknown provider: {self.provider}")
 
     def chat(self, model: str, msg, temperature: float = 0.0, max_tokens: int = 1000) -> str:
-        if self.provider == "openrouter":
+        if self.provider in ["openrouter", "custom"]:
             return self._chat_openrouter(model, msg, temperature=temperature, max_tokens=max_tokens)
         raise ValueError(f"Unknown provider: {self.provider}")
 
@@ -141,20 +154,35 @@ def main():
     ap.add_argument("--max_attempts", type=int, default=3)
     ap.add_argument("--skip_judge_on_exact_match", action="store_true", default=True)
 
-    ap.add_argument("--provider", choices=["openrouter"], default="openrouter")
+    ap.add_argument("--provider", choices=["openrouter", "custom"], default="openrouter",
+                    help="API provider: openrouter or custom (for Moonshot, DeepSeek, etc.)")
     ap.add_argument("--max_tokens", type=int, default=3000)
     ap.add_argument("--openrouter_base_url", default="https://openrouter.ai/api/v1")
+    ap.add_argument("--custom_api_key", default=None,
+                    help="API key for custom provider (reads from CUSTOM_API_KEY env var if not specified)")
+    ap.add_argument("--custom_base_url", default=None,
+                    help="Base URL for custom provider (reads from CUSTOM_BASE_URL env var if not specified)")
 
     # wrong_limit: “做了但做错了”的题目总数上限（包含断点续传中既有的做错记录）
     ap.add_argument("--wrong_limit", type=int, default=-1)
 
     args = ap.parse_args()
 
-    llm = LLMClient(
-        provider=args.provider,
-        openrouter_api_key=os.environ.get("OPENROUTER_API_KEY"),
-        openrouter_base_url=args.openrouter_base_url,
-    )
+    # Initialize LLM client based on provider
+    if args.provider == "custom":
+        api_key = args.custom_api_key or os.environ.get("CUSTOM_API_KEY")
+        base_url = args.custom_base_url or os.environ.get("CUSTOM_BASE_URL")
+        llm = LLMClient(
+            provider=args.provider,
+            custom_api_key=api_key,
+            custom_base_url=base_url,
+        )
+    else:  # openrouter
+        llm = LLMClient(
+            provider=args.provider,
+            openrouter_api_key=os.environ.get("OPENROUTER_API_KEY"),
+            openrouter_base_url=args.openrouter_base_url,
+        )
 
     out_dir_abs = os.path.abspath(args.out_dir)
     os.makedirs(out_dir_abs, exist_ok=True)
@@ -262,6 +290,7 @@ def main():
         gen_ans = chat_with_retry(
             args.player_model,
             player_msgs,
+            temperature=1.0 if 'kimi' in args.player_model.lower() else 0.0,
             max_tokens=args.max_tokens,
             tag="player",
         )
@@ -327,6 +356,7 @@ def main():
         judge_raw = chat_with_retry(
             args.judge_model,
             judge_msgs,
+            temperature=1.0 if 'kimi' in args.judge_model.lower() else 0.0,
             max_tokens=args.max_tokens,
             tag="judge",
         )

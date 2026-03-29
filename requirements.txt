@@ -1,6 +1,7 @@
-openai 
-python-dotenv 
-tqdm 
-datasets 
-pandas 
+openai
+python-dotenv
+tqdm
+datasets
+pandas
 matplotlib
+PyYAML>=6.0

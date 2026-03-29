@@ -1,0 +1,52 @@
+# InteractiveBench Unified Testing Framework - Default Configuration
+
+framework:
+  version: "1.0.0"
+  output_dir: "results"
+
+# Model registry with aliases
+# Format: alias: full_model_id
+models:
+  # OpenRouter models
+  gpt-4o: openai/gpt-4o
+  claude-3.5-sonnet: anthropic/claude-3.5-sonnet
+  gemini-pro: google/gemini-pro
+  grok: x-ai/grok-4.1-fast
+  gpt-4o-mini: openai/gpt-4o-mini
+  claude-3-haiku: anthropic/claude-3-haiku
+  gemini-flash: google/gemini-flash-1.5
+
+  # Moonshot (Kimi) models - use custom provider
+  kimi-2.5: moonshot/kimi-2.5
+
+# Model provider configurations
+# Each model can specify its provider and API settings
+providers:
+  openrouter:
+    api_key_env: "OPENROUTER_API_KEY"
+    base_url_env: "OPENROUTER_BASE_URL"
+    default_base_url: "https://openrouter.ai/api/v1"
+
+  moonshot:
+    api_key_env: "MOONSHOT_API_KEY"
+    base_url_env: "MOONSHOT_BASE_URL"
+    default_base_url: "https://api.moonshot.ai/v1"
+    provider_type: "custom"
+
+# Module-specific default configurations
+modules:
+  math:
+    judge_model: "x-ai/grok-4.1-fast"
+    max_tokens: 5000
+    dataset_name: "hle"
+    dataset_path: "src/math/data/puzzle_math.json"
+
+  situation_puzzle:
+    judge_model: "x-ai/grok-4.1-fast"
+    max_rounds: 20
+    puzzles_path: "src/situation_puzzle/data/puzzles_en.json"
+
+  trust_game:
+    delta: 0.9
+    rounds_range: [3, 7]
+    num_games: 5
