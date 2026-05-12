@@ -64,5 +64,13 @@ InteractiveBench/
 ## Citation / License
 
 - **License**: MIT (see `LICENSE`)
-- If you use this repository’s evaluation pipeline in a paper or report, please cite:
-  repository name + the specific benchmark used + the commit hash (especially if you forked and modified the code).
+- If you find our work useful in your research, please consider citing our paper!
+
+```bibtex
+@article{yue2026interactive,
+  title={Interactive Benchmarks},
+  author={Yue, Baoqing and Zhu, Zihan and Yutong Han and Qian Sun and Feng, Jichen and Yang, Hufei and Zhang, Yifan and Wang, Mengdi},
+  journal={arXiv preprint arXiv:2603.04737},
+  year={2026}
+}
+```
